@@ -1,0 +1,11 @@
+[package]
+name = "mollusk_testing"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+mollusk-svm = "0.11.0"
+solana-sdk = "4.0.1"
+solana-account = "3.4.0"
+mollusk-svm-result = "0.11.0"
+solana-program-error = "3.0.0"
