@@ -1,0 +1,26 @@
+[package]
+name = "counter_program"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+borsh = "1.6.1"
+solana-program = "2.2.0"
+
+[dev-dependencies]
+litesvm = "0.6.1"
+mollusk-svm = "0.11.0"
+mollusk-svm-bencher = "0.11.0"
+mollusk-svm-programs-token = "0.11.0"
+solana-client = "2.2.0"
+solana-sdk = "2.2.0"
+tokio = "1.50.0"
+
+
+[[example]]
+name = "client"
+path = "examples/client.rs"

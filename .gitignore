@@ -32,3 +32,51 @@ target
 node_modules
 test-ledger
 .yarn
+
+.surfpool/
+
+
+
+# 依赖目录
+node_modules/
+.pnp/
+.pnp.js
+
+# 编译输出
+dist/
+build/
+out/
+*.js
+!*.config.js
+*.js.map
+*.d.ts.map
+
+# TypeScript 缓存
+*.tsbuildinfo
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 测试、覆盖率
+coverage/
+.nyc_output/
+
+# 系统文件
+Thumbs.db

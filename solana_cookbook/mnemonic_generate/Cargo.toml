@@ -1,0 +1,12 @@
+[package]
+name = "mnemonic_generate"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bip39 = "2.2.2"
+hex = "0.4.3"
+pbkdf2 = "0.12.2"
+sha2 = "0.11.0"
+solana-client = "1.18.17"
+solana-sdk = "1.18.17"
