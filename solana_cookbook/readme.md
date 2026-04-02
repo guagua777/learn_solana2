@@ -48,4 +48,6 @@ Associated Token Program 使用 跨程序调用 来：
 
 调用 System Program 使用提供的 PDA 作为地址创建新账户
 调用 Token Program 初始化 Token Account 数据
-13. 
+13. https://www.anchor-lang.com/docs/tokens/basics/mint-tokens
+    1.  mint账户使用普通账户（即在椭圆曲线上的账户）
+    2.  mint账户使用PDA账户
