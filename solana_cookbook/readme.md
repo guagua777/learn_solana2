@@ -15,14 +15,19 @@
 钱包 + mint → 无限多个
 
 👉 这是“真实能力”
+
+
 8. token account 是普通账户，不是唯一映射
-9. Solana runtime：
+
+9.  Solana runtime：
 
 👉 完全不关心 ATA
 
 👉 它只认：
 
 token account（任何符合结构的账户）
+
+
 10. Token Program 本身不负责“创建账户”，它只负责“初始化账户”
 🧠 Step 1：创建普通账户（System Program）
 
@@ -37,17 +42,23 @@ owner
 状态
 
 👉 合在一起才是一个完整的 token account
+
+
 11. 创建普通的代币账户：https://beta.solpg.io/660ce716cffcf4b13384d010
 如果要用新的 keypair 创建一个新的 Token Account，而不是使用 Associated Token Account 地址，需要发送包含两个指令的交易。以下是在 Solana Playground 上的 Javascript 示例。
 
 System Program 创建一个新账户，为 Token Account 数据分配空间，并将所有权转移给 Token Program。
 
 Token Program 将数据初始化为 Token Account。
+
+
 12. 创建ATA关联代币账户：https://beta.solpg.io/660ce868cffcf4b13384d011
 Associated Token Program 使用 跨程序调用 来：
 
 调用 System Program 使用提供的 PDA 作为地址创建新账户
 调用 Token Program 初始化 Token Account 数据
+
+
 13. https://www.anchor-lang.com/docs/tokens/basics/mint-tokens
     1.  mint账户使用普通账户（即在椭圆曲线上的账户）
     2.  mint账户使用PDA账户 
